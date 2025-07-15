@@ -1,0 +1,14 @@
+spring:
+  sql:
+    init:
+      mode: always
+  datasource:
+    url: jdbc:h2:mem:testdb
+  jpa:
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true  # ⭐⭐ 이거 추가!
+    show-sql: true
+  h2:
+    console:
+      enabled: true
